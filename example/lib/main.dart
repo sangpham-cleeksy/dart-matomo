@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
 class Foundation {}
 
 class MyHomePage extends TraceableStatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key, name: title);
+  MyHomePage({Key? key, required this.title}) : super(key: key, name: title);
 
   final String title;
 
@@ -69,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
         ),
